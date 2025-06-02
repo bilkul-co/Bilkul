@@ -1,0 +1,40 @@
+export default function Home() {
+  return (
+    <div className="min-h-screen bg-white text-gray-800">
+      {/* Hero Section */}
+      <section className="bg-gradient-to-br from-blue-500 to-indigo-600 text-white py-20 px-6 text-center">
+        <h1 className="text-4xl md:text-6xl font-bold mb-4">Welcome to Bilkul.co</h1>
+        <p className="text-lg md:text-2xl mb-6">AI-powered Travel Assistant for Dubai</p>
+        <button className="bg-white text-blue-600 font-semibold px-6 py-3 rounded-xl shadow-lg hover:bg-gray-100 transition">Start Planning</button>
+      </section>
+
+      {/* Features Section */}
+      <section className="py-16 px-6 md:px-20 grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div className="bg-gray-100 p-6 rounded-2xl shadow">
+          <h2 className="text-xl font-bold mb-2">Smart Itinerary Builder</h2>
+          <p>Create custom plans based on your time, budget, and interests.</p>
+        </div>
+        <div className="bg-gray-100 p-6 rounded-2xl shadow">
+          <h2 className="text-xl font-bold mb-2">Attraction Comparisons</h2>
+          <p>See reviews, highlights, and price comparisons instantly.</p>
+        </div>
+        <div className="bg-gray-100 p-6 rounded-2xl shadow">
+          <h2 className="text-xl font-bold mb-2">Transport & Maps</h2>
+          <p>Find the best routes using metro, taxi, tram, or chauffeur.</p>
+        </div>
+      </section>
+
+      {/* Chatbot CTA */}
+      <section className="bg-blue-50 py-16 px-6 text-center">
+        <h2 className="text-3xl font-semibold mb-4">Meet Bikul AI</h2>
+        <p className="mb-6">Your smart companion for exploring Dubai — just ask anything!</p>
+        <button className="bg-blue-600 text-white px-6 py-3 rounded-xl shadow hover:bg-blue-700">Chat with Bikul</button>
+      </section>
+
+      {/* Footer */}
+      <footer className="text-center py-8 text-sm text-gray-500">
+        © {new Date().getFullYear()} Bilkul.co — All rights reserved.
+      </footer>
+    </div>
+  );
+}
